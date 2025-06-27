@@ -77,6 +77,7 @@ public class BottleRecognitionController : ControllerBase
             _logger.LogInformation("Bottle recognition completed successfully");
             return Ok(new
             {
+                // Response structure
                 success = true,
                 data = new {
                     name = result.Name,
